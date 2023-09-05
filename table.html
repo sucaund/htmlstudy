@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블</title>
+</head>
+<body>
+<fieldset>
+    <table border="1">
+        <caption>표를 만들자</caption>
+        <col style="width: 80px">
+        <colgroup span="2" style="width:150px"></colgroup>
+        <thead> 
+        <tr>
+            <th scope="col">번호</th>
+            <th scope="col">상품명</th>
+            <th scope="col">수량</th>
+            <th scope="col">가격</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1개</td>
+            <td>1500원</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2개</td>
+            <td rowspan="2">1000원</td>
+            <!---행의 통합--->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>3개</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>총금액</td>
+            <td colspan="3">6500원</td>
+            <!----열의 통합-->
+        </tr>
+        </tfoot>
+</fieldset>
+    </table>
+</body>
+</html>
